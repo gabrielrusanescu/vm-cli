@@ -14,7 +14,7 @@ print_char:
 done:
   hlt                           # stop execution
 
-msg: .asciz "Hello, World!\r\n"
+msg: .asciz "Bye, World!\r\n"
 
 .fill 510-(.-init), 1, 0        # add zeroes to make it 510 bytes long
 .word 0xaa55                    # magic bytes that tell BIOS that this is bootable

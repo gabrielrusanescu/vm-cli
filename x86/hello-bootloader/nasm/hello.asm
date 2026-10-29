@@ -16,7 +16,7 @@ print_char:
 done:
   hlt                               ; stop execution
 
-msg: db "Hello, World!", 13, 10, 0  ; we need to explicitely put the zero byte here
+msg: db "Bye, World!", 13, 10, 0  ; we need to explicitely put the zero byte here
 times 510-($-$$) db 0               ; fill the output file with zeroes until 510 bytes are full
 
 dw 0xaa55                           ; magic number that tells the BIOS this is bootable
