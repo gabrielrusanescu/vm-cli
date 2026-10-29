@@ -8,5 +8,5 @@ void print_uart0(const char *s) {
 }
 
 void main() {
-    print_uart0("Hello World!\n");
+    print_uart0("Bye, World!\n");
 }
